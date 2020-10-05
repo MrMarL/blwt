@@ -1,0 +1,16 @@
+{
+"companyName": "MrMarL",
+"productName": "blwt",
+"productVersion": "0.1",
+"dataUrl": "blwt.data.unityweb",
+"wasmCodeUrl": "blwt.wasm.code.unityweb",
+"wasmFrameworkUrl": "blwt.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}

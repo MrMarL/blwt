@@ -4,12 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | blwt</title>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Build/blwt.json");
-    </script>
   </head>
-  <body>
-    <div id="unityContainer" style="width: 1332px; height: 660px; margin: auto"></div>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1332 height=660 style="width: 1332px; height: 660px; background: #000000"></canvas>
+    <script src="Build/blwt.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/blwt.data.gz",
+        frameworkUrl: "Build/blwt.framework.js.gz",
+        codeUrl: "Build/blwt.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "MrMarL",
+        productName: "blwt",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
   </body>
 </html>
